@@ -1,0 +1,247 @@
+CREATE DATABASE muskan;
+USE muskan ;
+
+
+  CREATE TABLE student_details(  
+  Student_id INT NOT NULL,
+  First_name VARCHAR (255) NOT NULL,
+  Last_name VARCHAR (255)NOT NULL,
+  Age INT NOT NULL ,
+  Genger VARCHAR (255) NOT NULL,
+  Address VARCHAR (255) DEFAULT 'THANE',
+  Moblie INT NOT NULL,
+  PRIMARY KEY (Student_id)
+  );
+
+
+  SELECT * FROM student_details ;
+
+  INSERT INTO student_details
+  VALUES (1,'Muskan','Ansari',18,'Female','Thane',90543276),
+		 (2,'Sanskruti','Rajput',19,'Female','Mulund',80567431),
+		 (3,'Ayesha','Khan',20,'Female','Aroli',70765231),
+		 (4,'Anam','Shaikh',20,'Female','Mumbra',90765331),
+		 (5,'Iram','Choudary',21,'Female','Thane',80765441),
+		 (6,'Kahakasha','Ansari',21,'Female','Thane',90765431),
+		 (7,'Asiya','Khan',20,'Female','Mumbai',90065431),
+		 (8,'Umair','Shaikh',18,'Male','Kausa',90705431),
+		 (9,'Arshad','Narekar',20,'Male','Borowali',90765400),
+		 (10,'Sonu','Rajput',22,'Male','Mumbra',90765531),
+		 (11,'Iqra','Dalvi',20,'Female','Neral',90775431),
+		 (13,'Fatima','Shaikh',19,'Female','Vashi',90760031),
+		 (14,'Afsha','Khan',18,'Female','Mumbra',90765424),
+		 (15,'Aiman','Choudary',20,'Female','Mulund',90765431),
+             (16,'Asim','Riyaz',18,'Male','Thane',90763668),
+             (17,'Rajiv','Rajiv',18,'Male','Bhiwandi',90765431),
+             (18,'Muskan','Khan',20,'Female','Ulhasnagar',90765400),
+             (20,'Myasha','Shaikh',18,'Female','Diva',90765412),
+             (21,'Sanket','Raut',20,'Female','Kaln',90765431),
+             (22,'Jayesh','Dalvi',20,'Female','Mumbra',99965431),
+             (23,'Fadi','Rajput',18,'Female','Thane',90444431),
+             (24,'Naddem','Khan',21,'Female','Kurla',98722231),
+             (25,'Mohsin','Choudary',21,'Female','Thane',96761111),
+             (26,'Komal','Patil',20,'Female','Kalyan',93768881),
+             (27,'Kajal','Rao',18,'Female','Diva',90765531),
+             (28,'Rakhi','Rajput',20,'Female','Kolshet',90765439),
+             (29,'Mahira','Khan',19,'Female','Cst',90765431),
+             (31,'Usra','Ansari',18,'Female','Thane',90765431),
+             (33,'Saloni','Saroj',18,'Female','Thane',90765431),
+             (32,'Priyanka','Teli',18,'Female','Thane',90765431),
+             (34,'Siraj','Turki',20,'Female','Thane',90765437),
+             (35,'Abhijeet','Sharma',19,'Female','Thane',90123431),
+             (36,'Shokat','Chpora',18,'Female','Thane',70365431),
+             (37,'Abbas','Khan',19,'Female','Thane',90065401),
+             (38,'Roshni','Walia',18,'Female','Thane',90965431),
+             (39,'Arsal','Zubair',20,'Female','Thane',90165423),
+		         (40,'Jiya','Khan',20,'Female','Thane',90765434),
+             (41,'Nilofar','Ansari',18,'Female','Thane',97604124),
+	        (42,'Sami','Khan',20,'Male','Thane',90765404),  
+	       (43,'Goli','Ansari',18,'Male','Thane',90765124),
+             (44,'Panu','Raja',21,'Male','Kalwa',99268786),
+		 (45,'Ram','Shaikh',20,'Male','Mulund',78215905),
+             (46,'Tehseen','Khan',22,'Female','Mumbra',72576861),
+	       (47,'Rehan','Kuttey',19,'Male','Kalyan',90724234),
+             (48,'Sanskruti','Rajput',22,'Female','Airoli',78085905),
+             (49,'Muskan','Ansari',22,'Female','Thane',90765445),
+	       (50,'Muskan','Ansari',20,'Female','Mirabhyandar',90768124);
+
+
+CREATE TABLE Teacher_detail(
+Teacher_id INT NOT NULL,
+first_name VARCHAR(255) NOT NULL,
+Last_name VARCHAR(255) NOT NULL,
+Email VARCHAR(255) NOT NULL,
+Address VARCHAR(255) DEFAULT 'THANE',
+Salary INT NOT NULL,
+primary key(Teacher_id));
+
+SELECT * FROM Teacher_detail ;
+
+          INSERT INTO Teacher_detail
+  VALUES (1,'Sunita','Patil','sunitapatil@gmail.com','Mumbai',50000),
+         (2,'Rashmi','Thakur','rashmithakur@gmail.com','Nahur',40000),
+         (3,'Sonali','Shukla','sonalishukla@gmail.com','Neral',60000),
+         (4,'Ranjeet','Varma','ranjeetvarma@gmail.com','Kalyan',50000),
+         (5,'Priyanka','Dalvi','riyankadalvi@gmail.com','Bhandup',40000),
+         (6,'Sulaim','Dalvi','sulaimdalvi@gmail.com','Panvel',80000),
+         (7,'Priya','Kazi','riyakazi@gmail.com','Mumbra',350000),
+         (8,'Rnjali','Mehta','anjalimehta@gmail.com','Ghatkoper',40000),
+	   (9,'Roshan','Khot','roshan khot@gmail.com','Thane',40000),
+         (10,'Sunita','Barmare','sunitabarmare@gmail.com','Thane',45000),
+         (11,'Taha','Nakhwa','tahanakhwa@gmail.com','Mumbra',30000),
+         (12,'Sana','Chopra','sanachopra@gmail.com','Bhandup',60000),
+         (13,'Sumaiya','kaif','sumaiyakaif@gmail.com','Diva',50000),
+         (14,'Asiya','rawoot','asiyarawoot@gmail.com','Kalyan',40000),
+         (15,'Asiya','Khan','asiyakhan@gmail.com','Badlapur',250000),
+         (16,'Anjali','Kutla','anjalikutla@gmail.com','Kausa',20000),
+         (17,'Sanskruti','Shaikh','sanskrutishaikh@gmail.com','Ambernath',25000),
+	   (18,'Muskan','Ansari','muskanmrudkar@gmail.com','Kalwa',55000),
+         (19,'Iqra','Dalvi','iqradalvi@gmail.com','Mumbra',80000),
+         (20,'Priyanka','Khot','priyankakhot@gmail.com','Vikroli',35000),
+         (21,'Jyoti','Sroj','jyotisaroj@gmail.com','Mumbra',30000),
+         (22,'Jiya','Chopra','jiyachopra@gmail.com','Bhandup',60000),
+         (23,'Sana','kaif','sanakaif@gmail.com','Diva',50000),
+         (24,'Asiya','Khan','asiyakhan@gmail.com','Kalyan',40000),
+         (25,'Ayesha','Khan','ayeshakhan@gmail.com','Badlapur',250000),
+         (26,'Anjali','Gupta','anjaligupta@gmail.com','Kausa',20000),
+         (27,'Sameena','Shaikh','sameenashaikh@gmail.com','Ambernath',25000),
+	   (28,'Muskan','Altaf','muskanaltaf@gmail.com','Kalwa',55000),
+	   (29,'Anam','qazi','anamqazi@gmail.com','Mumbra',80000),
+         (30,'Priyanka','rajput','priyankaraj@gmail.com','Vikroli',35000),
+         (31,'Eram','Rao','eramrao@gmail.com','Thane',30000),
+         (32,'Arsal','khan','arsalkhan@gmail.com','Thane',80000),
+         (33,'Komal','Teli','komalteli@gmail.com','Diva',50000),
+         (34,'Abdul','shaikh','abdulshaikh@gmail.com','Thane',40000),
+         (35,'Azhar','Khan','azharkhan@gmail.com','Badlapur',250000),
+         (36,'Arshi','shaikh','arshishaikh@gmail.com','Thane',20000),
+         (37,'Sameena','Shaikh','sameenashaikh@gmail.com','Ambernath',25000),
+	   (38,'Mushtaq','Altaf','mushtaqaltaf@gmail.com','Kalwa',55000),
+         (39,'Anam','khan','anamkhan@gmail.com','Mumbra',80000),
+         (40,'Aliya','rajput','aliyaraj@gmail.com','Thane',35000),
+         (41,'Rohit','Raj','rohitraj@gmail.com','Mumbai',80000),
+         (42,'Mrunal','Thakur','mrunalthakur@gmail.com','Nahur',40000),
+         (43,'Ayesha','Khan','ayeshakhan@gmail.com','Aroli',70000),
+         (44,'Anam','Shaikh','anamshaikh@gmail.com','Mumbra',90000),
+         (45,'Iram','Choudary','iramchoudary@gmail.com','Thane',80000),
+         (46,'Kahakasha','Ansari','kahkashaansari@gmail.com','Thane',90000),
+         (47,'Asiya','Khan','asiyakhan@gmail.com','Mumbai',90000),
+         (48,'Umair','Shaikh','umairshaikh@gmail.com','Kausa',20000),
+         (49,'Iqra','Dalvi','iqradalvi@gmail.com','Mumbra',80000),
+         (50,'Priyanka','Khot','priyankakhot@gmail.com','Vikroli',35000);
+
+ 1.  write a sql query for print first name last name age from student table ?  
+ SELECT First_name,Last_name,age FROM stduent_details;
+
+ 2 .  write a sql query for calculate salary from teacher table ?
+ SELECT First_name,Salary FROM Teacher_detail;
+
+ 3.write a sql query for  first name last name where student age is 20 ?
+ SELECT first_name,Last_name,Age FROM student_details LIMIT 20;
+
+ 4. write a sql query where first name is muskan ?
+ SELECT first_name FROM student_details WHERE first_name ="muskan" ;
+
+
+ 5.  write a sql query first letter is m ?
+ SELECT first_name FROM student_details WHERE first_name like 'm%' ;
+
+
+ 6. write a sql query where  letter is a ?
+ SELECT last_name FROM student_details WHERE first_name like '%a' ;
+
+
+ 7.write a sql query where first letter is not starts with "m" ?
+ SELECT first_name FROM student_details WHERE first_name NOT like 'm%' ;
+
+
+ 8.write a sql query first name last name and age on descending order from student table  ?
+ SELECT first_name,Last_name,Age FROM student_details ORDER BY age desc ;
+
+
+ 9.write a sql query first name last name from teacher table salary in descendind order ?
+ SELECT first_name,last_name FROM teacher_detail ORDER BY salary desc ;
+
+
+ 10. write a sql query first name last name where name lenght is 5 ?
+ SELECT first_name,last_name FROM student_details WHERE length(first_name)>5 ;
+
+
+ 11. write a sql query for substring   ? 
+ SELECT student_id, substring(first_name,1,4)  , age from student_details ;
+
+
+ 12.write a sql query where student age is 20,21,22 from student table ?
+ SELECT * FROM Student_details WHERE age IN (20,21,22) ;
+
+ 13.write a sql query first name last name as Sname from student table ?
+ SELECT lower(first_name) AS Fname, lower(last_name) AS Sname from student_details ;
+
+
+
+ 14.write a sql query to calculate minimun maximum salary from teacher table ?
+ SELECT max(salary) ,min(salary) FROM teacher_detail ;
+
+ 15.write a sql query to calculate average salary where name starts with muskan ?
+ SELECT avg(salary) FROM teacher_detail WHERE first_name= 'muskan'; 
+
+
+ 16.write a sql query to count salary who lives in thane ?
+ SELECT count(salary) FROM teacher_detail WHERE address= 'thane'; 
+
+
+ 17.write a sql query form trim ?
+ SELECT trim("muskan") ;
+ SELECT ltrim("         muskan              ") ;
+
+ 18.write a sql query for length from teacher ?
+ SELECT first_name, length(first_name),last_name,length(last_name) FROM teacher_detail ;
+
+
+ 19.write a sql query for concat for student
+ SELECT first_name,last_name,concat(first_name," ",last_name) FROM student_details;
+
+
+
+ 20.write a sql query for union zand union all ?
+ SELECT student_id FROM student_details
+ UNION 
+ SELECT teacher_id FROM  teacher_detail ;
+
+
+ SELECT student_id FROM student_details
+ UNION ALL
+ SELECT teacher_id FROM  teacher_detail ;
+
+
+ 21.write a sql query for view ?
+ CREATE VIEW muskan AS SELECT * from student_details WHERE first_name='muskan';
+ SELECT * FROM muskan 
+
+
+
+ 22.write a sql query for join ? 
+ SELECT student_details.student_id,
+ student_details.first_name,student_details.last_name,
+ teacher_detail.salary
+ FROM student_details
+ RIGHT JOIN teacher_detail 
+ ON student_details.student_id=teacher_detail.teacher_id;
+
+
+ SELECT student_details.student_id,
+ student_details.first_name,student_details.last_name,
+ teacher_detail.salary
+ FROM student_details
+ LEFT JOIN teacher_detail 
+ ON student_details.student_id=teacher_detail.teacher_id;
+
+
+ SELECT student_details.student_id,
+ student_details.first_name,student_details.last_name,
+ teacher_detail.salary
+ FROM student_details
+ INNER JOIN teacher_detail 
+ ON student_details.student_id=teacher_detail.teacher_id;
+
+
+
